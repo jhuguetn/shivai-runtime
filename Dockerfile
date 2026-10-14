@@ -26,7 +26,9 @@ ENV PYTHONUNBUFFERED=1 \
 #     NUMEXPR_NUM_THREADS=4
 
 # System dependencies: minimal set required by SHiVAi
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN sed -i 's|deb.debian.org|archive.debian.org|g' /etc/apt/sources.list \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends \
     build-essential \
     ca-certificates \
     curl \
