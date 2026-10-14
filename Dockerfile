@@ -1,6 +1,6 @@
 FROM python:3.11.13-slim-bullseye
 
-ARG SHIVAI_COMMIT=b57c49175861b9a434e6b8bc3b0491faf4a0aac9
+ARG SHIVAI_COMMIT=v0.6.2
 ARG ANTS_VERSION=2.4.3
 ARG TENSORFLOW_VERSION=2.17.0
 ARG KERAS_VERSION=3.6.0
@@ -37,6 +37,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgdk-pixbuf2.0-0 \
     libpango-1.0-0 \
     libpangoft2-1.0-0 \
+    libpangocairo-1.0-0 \
+    fontconfig \
+    shared-mime-info \
     libffi-dev \
     libjpeg-dev \
     libopenjp2-7-dev \
