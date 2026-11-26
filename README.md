@@ -18,7 +18,7 @@ Find the image in Docker Hub [here](https://hub.docker.com/r/jhuguetn/shivai-run
 * dcm2niix
 * TensorFlow 2.17.0
 * Keras 3.6.0
-* SHiVAi pinned commit/version: `v0.6.2`
+* SHiVAi pinned commit/version: `v0.6.4`
 
 ## Usage
 
